@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:modelhandler/screen/login_screen.dart';
-import 'package:modelhandler/screen/student_screen.dart';
+import 'package:modelhandler/screen/chat_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: LoginPage(),
+      home: ChatPage(username: 'Dave Aiken P. Marquez'),
       debugShowCheckedModeBanner: false,
     );
   }
